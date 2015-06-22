@@ -84,7 +84,7 @@ body {
   width: 200px;
 }
 
-span {
+/*span {
   background: rgba(255, 80, 0, 0.7);
   border-radius: 4px;
   bottom: -4px;
@@ -97,6 +97,26 @@ span {
   transform-origin: 100% 4px;
   transform: rotate(0deg);
   transition: all 1s;
+}
+*/
+span {
+	width: 90px;
+	height: 8px;
+	background: #FEAE50;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	display: inline-block;
+	left: 10px;
+	position: absolute;
+	top: 90px;
+    transform-origin: 100% 4px;
+    transform: rotate(0deg);
+    transition: all 1s;
+/*	-webkit-animation: move 5s infinite;
+	transform: rotate(0deg);
+	transform-origin: bottom;*/
 }
 
 #logo:hover span {
