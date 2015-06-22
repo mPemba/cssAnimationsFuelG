@@ -1,0 +1,144 @@
+/*  A WORKING CSS ANIMATION FUEL METER   */
+/*#logo {
+    display: inline-block;
+    position: relative;
+}
+#speedometer {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: 20px solid #333;
+    border-right: 20px solid white;
+    border-bottom: 20px solid white;
+    -webkit-transform: rotate(45deg);
+    display: inline-block;
+}
+#needle {
+    width: 10px;
+    height: 100px;
+    background: #FEAE50;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    display: inline-block;
+    left: 95px;
+    position: absolute;
+    top: 0px;
+    -webkit-animation:move 5s infinite;
+    transform:rotate(0deg);
+    transform-origin:bottom;
+}
+
+@keyframes move {
+    0% {
+        transform:rotate(-90deg);
+    }
+    50% {
+        transform:rotate(90deg);
+    }
+    100% {
+        transform:rotate(-90deg);
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform:rotate(-90deg);
+    }
+    50% {
+        -webkit-transform:rotate(90deg);
+    }
+    100% {
+        -webkit-transform:rotate(-90deg);
+    }
+}
+*/
+
+
+/*    END WORKING INFINITE ANIMATION    */
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+body {
+  background: #fff;
+}
+
+#logo:before {
+  background: #333;
+  border-radius: 200px 200px 0 0;
+  box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.15) inset;
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+}
+
+#logo {
+  border-radius: 200px 200px 0 0;
+  height: 100px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+}
+
+span {
+  background: rgba(255, 80, 0, 0.7);
+  border-radius: 4px;
+  bottom: -4px;
+  box-shadow: 3px -1px 4px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 8px;
+  left: 10px;
+  position: absolute;
+  width: 90px;
+  transform-origin: 100% 4px;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+#logo:hover span {
+  transform: rotate(180deg);
+}
+
+h1,
+p,
+strong {
+  display: block;
+  font-family: Lato;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin-top: 0;
+}
+
+strong {
+  color: #efefef;
+  font-size: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
