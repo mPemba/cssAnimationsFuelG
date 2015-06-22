@@ -1,57 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>1 - 5 Meter</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>1 - 5 Meter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
 
-<div id="logo" data-value="0">	
-    <span id="speedometer"></span>
-	<span id="needle"></span>
-</div>
-
+    <div id="logo" data-value="0">	
+        <span id="speedometer"></span>
+	    <span id="needle"></span>
+    </div>
 <hr>
-
 <div>
     <input type="number" id="crowdResponse"/>
 </div>
-
-<script>
-
-var needle = $('needle');
-var el = $('speedometer');
-var crowdResponse = document.getElementById(crowdResponse).value;
-
-var measureDeg = function() {
-  // matrix-to-degree conversion from http://css-tricks.com/get-value-of-css-rotation-through-javascript/
-  var st = window.getComputedStyle(crowdResponse, null);
-  // var tr = st.getPropertyValue("-webkit-transform") ||
-  //          st.getPropertyValue("-moz-transform") ||
-  //          st.getPropertyValue("-ms-transform") ||
-  //          st.getPropertyValue("-o-transform") ||
-  //          st.getPropertyValue("transform") ||
-  //          "fail...";
-
-  var values = tr.split('(')[1];
-      values = values.split(')')[0];
-      values = values.split(',');
-  var a = values[0];
-  var b = values[1];
-  var c = values[2];
-  var d = values[3];
-
-  var scale = Math.sqrt(a*a + b*b);
-
-  // arc sin, convert from radians to degrees, round
-  var sin = b/scale;
-  var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
-  
-  el.set('data-value', angle);
-};
-
-var periodicalID = measureDeg.periodical(10);
-
-</script>
 </body>
 </html>

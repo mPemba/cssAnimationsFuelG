@@ -56,14 +56,9 @@
 */
 
 
-/*    END WORKING INFINITE ANIMATION    */
+/*    END WORKING INFINITE ANIMATION  
 
-
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-
-body {
-  background: #fff;
-}
+      BEGIN OTHER WORKING HOVER ANIMATION   */
 
 #logo:before {
   background: #333;
@@ -84,7 +79,7 @@ body {
   width: 200px;
 }
 
-/*span {
+span {
   background: rgba(255, 80, 0, 0.7);
   border-radius: 4px;
   bottom: -4px;
@@ -98,15 +93,15 @@ body {
   transform: rotate(0deg);
   transition: all 1s;
 }
-*/
+
 span {
 	width: 90px;
 	height: 8px;
 	background: #FEAE50;
-	border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 100%;
 	border-bottom-right-radius: 5px;
 	border-top-left-radius: 100%;
-	border-top-right-radius: 100%;
+	border-top-right-radius: 5px;
 	display: inline-block;
 	left: 10px;
 	position: absolute;
@@ -122,43 +117,3 @@ span {
 #logo:hover span {
   transform: rotate(180deg);
 }
-
-h1,
-p,
-strong {
-  display: block;
-  font-family: Lato;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 0.4em;
-}
-
-p {
-  margin-top: 0;
-}
-
-strong {
-  color: #efefef;
-  font-size: 2.5em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
