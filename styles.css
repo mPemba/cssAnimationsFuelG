@@ -1,5 +1,5 @@
 /*  A WORKING CSS ANIMATION FUEL METER   */
-/*#logo {
+#logo {
     display: inline-block;
     position: relative;
 }
@@ -53,14 +53,14 @@
         -webkit-transform:rotate(-90deg);
     }
 }
-*/
+
 
 
 /*    END WORKING INFINITE ANIMATION  
 
       BEGIN OTHER WORKING HOVER ANIMATION   */
 
-#logo:before {
+/*#logo:before {
   background: #333;
   border-radius: 200px 200px 0 0;
   box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.15) inset;
@@ -102,6 +102,7 @@ span {
 	border-bottom-right-radius: 5px;
 	border-top-left-radius: 100%;
 	border-top-right-radius: 5px;
+  z-index: 900;
 	display: inline-block;
 	left: 10px;
 	position: absolute;
@@ -116,4 +117,4 @@ span {
 
 #logo:hover span {
   transform: rotate(180deg);
-}
+}*/
